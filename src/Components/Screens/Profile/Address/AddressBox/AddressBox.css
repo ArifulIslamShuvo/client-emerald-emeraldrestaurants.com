@@ -1,0 +1,57 @@
+.default_info .edit_btn {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 1.7rem 2rem;
+}
+
+.default_info .edit_btn p {
+    font-weight   : 400;
+    font-size     : 2rem;
+    line-height   : 2.6rem;
+    text-transform: uppercase;
+    color         : #000000;
+}
+
+.default_info .edit_btn button {
+    width : 2rem;
+    height: 2rem;
+    color : #53A0BC;
+}
+
+.default_info .edit_btn button svg {
+    display: inline-block;
+    width  : 1.6rem;
+    height : 1.6rem;
+}
+
+.address_info.grid_container {
+    padding              : 3rem 2.8rem 4rem;
+    grid-template-columns: 1fr 1fr;
+    row-gap              : 3.5rem;
+}
+
+.address_info.grid_container>*:last-child {
+    grid-column: 1 / 3;
+}
+
+.address_info.grid_container>* p:nth-child(1) {
+    font-weight   : 500;
+    font-size     : 1.8rem;
+    line-height   : 2.3rem;
+    text-transform: uppercase;
+    color         : var(--gray-4);
+}
+
+.address_info.grid_container>* p:nth-child(2) {
+    font-weight: 400;
+    font-size  : 1.8rem;
+    line-height: 2.1rem;
+    color      : var(--black);
+}
+
+.address_info.grid_container>*:last-child p:nth-child(2) {
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+}

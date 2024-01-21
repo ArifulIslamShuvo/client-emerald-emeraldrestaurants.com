@@ -1,0 +1,210 @@
+.sign-in-content {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.sign-in-content>* {
+    flex: 0 0 auto;
+}
+
+.sign-in-content>*:nth-child(1) {
+    width: 41.66666667%;
+}
+
+.sign-in-content>*:nth-child(2) {
+    width: 58.33333333%;
+}
+
+.sign-in-banner img {
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
+}
+
+.sign_in_container .tabs-menu {
+    padding   : 5rem 3rem 8rem;
+    min-height: 106.32rem;
+}
+
+.login-logo {
+    max-width     : 20.3rem;
+    width         : 100%;
+    margin        : auto;
+    display       : block;
+    padding-bottom: 4rem;
+}
+
+.login-logo img {
+    width: 100%;
+}
+
+.sign-in-tabs {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.sign-in-tabs .tabs {
+    position      : relative;
+    font-weight   : 500;
+    font-size     : 2.8rem;
+    line-height   : 3.6rem;
+    color         : #858585;
+    text-transform: uppercase;
+    border-bottom : 3px solid #F2F2F2;
+    cursor        : pointer;
+    padding       : 1.5rem;
+}
+
+.sign-in-tabs .tabs.active-tabs {
+    color       : #355D6C;
+    border-color: #355D6C;
+}
+
+.content-tabs .content:not(.active-content) {
+    display: none;
+}
+
+.content-tabs .content p {
+    width      : 100%;
+    max-width  : 39.1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size  : 2.2rem;
+    line-height: 3.2rem;
+    text-align : center;
+    color      : #383838;
+    padding-top: 3.4rem;
+    margin     : 0 auto;
+}
+
+.content-tabs .content h6 {
+    font-weight  : 300;
+    font-size    : 2.2rem;
+    line-height  : 3.2rem;
+    text-align   : center;
+    color        : #383838;
+    margin-bottom: 4.3rem;
+}
+
+
+.social-login {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding-top    : 2.4rem;
+    padding-bottom : 3.4rem;
+}
+
+.social-login button:first-child {
+    margin-right: 3rem;
+}
+
+.social-login button:last-child {
+    margin-left: 3rem;
+}
+
+.sign_in_container .input-field {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+}
+
+.input-field input {
+    display      : block;
+    width        : 500px;
+    font-family  : 'Roboto', sans-serif;
+    font-weight  : 300;
+    font-size    : 2rem;
+    line-height  : 2.3rem;
+    color        : #383838;
+    border-bottom: 1px solid #B3B3B3;
+    padding      : 1.6rem 1.6rem 1.6rem 0;
+    margin-bottom: 2.4rem;
+    transition   : border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.input-field input:focus {
+    border-bottom: 1px solid #B3B3B3;
+}
+
+.input-field button {
+    font-family   : "Roboto", sans-serif;
+    padding       : 2.4rem 9.7rem;
+    font-weight   : 500;
+    font-size     : 2.4rem;
+    line-height   : 2.8rem;
+    color         : #383838;
+    text-transform: capitalize;
+    border        : 2px solid #383838;
+    border-radius : 50rem;
+    margin-top    : 5.2rem;
+}
+
+.input-field button {
+    margin-bottom: 5rem;
+}
+
+.input-field button:hover {
+    cursor    : pointer;
+    background: #383838;
+    color     : #fff;
+}
+
+.name-field {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 0 2.5rem;
+}
+
+.name-field input {
+    width: 48%;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 6rem;
+}
+
+.password-field span {
+    position      : absolute;
+    top           : 1.6rem;
+    right         : 1rem;
+    font-family   : "Roboto", sans-serif;
+    font-weight   : 500;
+    font-size     : 1.8rem;
+    line-height   : 2.1rem;
+    color         : #383838;
+    text-transform: capitalize;
+    cursor        : pointer;
+}
+.forgot_password{
+    font-weight  : 300;
+    font-size    : 2.2rem;
+    line-height  : 3.2rem;
+    text-align   : start;
+    color        : #383838;
+    /* margin-bottom: 2.3rem; */
+}
+@media screen and (max-width: 575.98px) {
+
+    .sign-in-content>*:nth-child(1),
+    .sign-in-content>*:nth-child(2) {
+        width: 100%;
+    }
+
+    .sign_in_container .tabs-menu {
+        min-height: 95.32rem;
+        order: 1
+    }
+
+    .input-field input,
+    .password-field {
+        width: 100%;
+    }
+}

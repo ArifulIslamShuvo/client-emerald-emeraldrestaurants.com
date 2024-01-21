@@ -1,0 +1,455 @@
+.nav-overlay {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-overlay.show {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.nav-container {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 99px;
+  background-color: #ffff;
+  margin: 0 auto;
+}
+
+.navbar {
+  font-size: 1.8rem;
+  /* padding-top   : 3rem;
+  padding-bottom: 3rem; */
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar > .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg-trns-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* background-color: transparent; */
+  background: rgba(56, 56, 56, 0.8);
+  transition: bottom 0.5s ease;
+}
+
+.bg-dark {
+  background-color: #383838;
+  transition: 0.3s ease-in-out;
+}
+
+/* navbar dropdown */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item .dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1.6rem;
+  padding: 1.6em 2.4rem;
+  top: 100%;
+  left: 0;
+  margin-top: 0.125rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.nav-item .dropdown-menu.show {
+  display: block;
+}
+
+.nav-item .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.nav-item .dropdown-item:focus,
+.nav-item .dropdown-item:hover {
+  color: #1e2125;
+  background-color: #e9ecef;
+}
+/* add cart */
+/* .nav-item .nav-link .add-cart {
+  width: 86px;
+  height: 86px;
+  padding: 29px 26px 19px 22px ;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #000;
+}
+.nav-item .nav-link .add-cart {
+  
+} */
+
+
+.navbar .navbar-collapse {
+  flex-grow: initial;
+}
+
+/* navbar location seclet box start */
+
+.navbar-location-select-box .location-select {
+  width: 100%;
+  min-width: 274px;
+  position: relative;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #f9f9f6;
+  padding: 4px 22px;
+  appearance: none;
+}
+
+.navbar-location-select-box .location-select:before {
+  content: "Change Location";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: red;
+}
+
+.navbar-location-select-box .location-select option {
+  background: #ffffff;
+  color: #858585;
+}
+
+.navbar-location-select-box .location-select option:hover {
+  background-color: #ffff;
+  color: red;
+  box-shadow: 0 0 10px 100px #1882a8 inset;
+}
+
+/* navbar location seclet box end */
+
+/* nvabar location modal show button start */
+.navbar-location-select-box .navbar-modal-show-btn {
+  width: 100%;
+  min-width: 450px;
+  position: relative;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #f9f9f6;
+  padding: 0.4rem 2.2rem;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-location-select-box .navbar-modal-show-btn::after {
+  content: "Change Location";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2px;
+  color: #d9e021;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navbar-location-select-box .navbar-modal-show-btn::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 0;
+  background-image: url(../../../../Assets/images/location-mark.svg);
+  background-repeat: no-repeat;
+  background-size: 14px 24px;
+  width: 14px;
+  height: 24px;
+}
+
+/* nvabar location modal show button end */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  padding-left: 3.2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:last-child {
+  padding-right: 0;
+}
+
+.dropdown-menu {
+  font-size: 1.6rem;
+  padding: 1.6em 2.4rem;
+}
+
+.dropdown-item {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.dropdown-item:active {
+  background-color: #383838;
+}
+
+.nav-link img {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+/* navbar cart counter */
+.cart-counter {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: #d9e021;
+  text-align: center;
+  position: absolute;
+  top: -0.9rem;
+  right: -1.2rem;
+}
+
+.cart-counter span {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: "Roboto", sans-serif;
+}
+
+.logout_btn {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.logout_btn:hover {
+  color: #1e2125;
+  background-color: #e9ecef;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+  .nav-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .navbar-location-select-box .navbar-modal-show-btn {
+    min-width: 248px;
+  }
+  .navbar {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .page-banner {
+    display: none;
+  }
+  .vertical-line {
+    display: none;
+  }
+  /* small device navbar start */
+  .navbar-cart {
+    flex-basis: 55%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .bar-wrapper .line {
+    width: 24px;
+    height: 2px;
+    background: #d9e021;
+  }
+
+  .bar-wrapper .line.line-two {
+    margin: 6px 0;
+  }
+
+  .navbar.bg-dark-custom {
+    background-color: #383838 !important;
+  }
+
+  .navbar-brand-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand-wrapper .navbar-toggler {
+    margin-right: 2.2rem;
+  }
+
+  .navbar-cart > div {
+    position: relative;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1.75rem 0;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 1rem 0;
+  }
+
+  .nav-link img {
+    height: 28px;
+    width: 28px;
+  }
+
+  .navbar .navbar-collapse {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .navbar .navbar-collapse.show {
+    height: auto;
+  }
+
+  .navbar-small-device {
+    height: calc(100vh - 492px);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-location-select-box .navbar-modal-show-btn::before {
+    background-size: 12px 18px;
+    width: 12px;
+    height: 18px;
+  }
+}
+
+.navbar .mb_logout_btn {
+  font-size: 18px;
+  line-height: 23px;
+  padding: 1rem 0;
+  color: white;
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+  .nav-container {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .vertical-line {
+    display: none;
+  }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+  .bg-trns-fixed {
+    background-color: #383838;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .navbar-location-select-box .navbar-modal-show-btn::after {
+    content: "";
+  }
+
+  .navbar-location-select-box .navbar-modal-show-btn::before {
+    top: 0;
+    left: -10%;
+  }
+
+  .navbar-location-select-box .navbar-modal-show-btn {
+    border-bottom: none;
+    padding: 0 1rem;
+  }
+
+  /* navbar */
+  .navbar-brand img {
+    width: 100%;
+    max-width: 12rem;
+  }
+
+  .navbar-brand-wrapper {
+    flex-basis: 45%;
+  }
+
+  .navbar-location-select-box .navbar-modal-show-btn {
+    min-width: 73px;
+  }
+
+  .navbar-cart .navbar-location-select-box {
+    flex-basis: 58%;
+  }
+}

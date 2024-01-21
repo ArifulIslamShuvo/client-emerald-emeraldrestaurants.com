@@ -1,0 +1,12 @@
+.btn {
+    display: block;
+    width: 100%;
+    font-family: var(--inter);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 1.6rem;
+    transition: border .3s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out;
+}

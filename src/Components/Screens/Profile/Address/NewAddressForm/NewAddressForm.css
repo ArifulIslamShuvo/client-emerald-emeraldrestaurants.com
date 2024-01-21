@@ -1,0 +1,21 @@
+.new_address_form .grid_container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap           : 2rem;
+}
+
+.new_address_form .grid_container:first-child .input_group.full_width {
+    grid-column: 1/3;
+}
+
+.new_address_form .grid_container:first-child .input_group .ecommerce_switch {
+    margin-top: 1.4rem;
+}
+
+@media (orientation: portrait) {
+    .new_address_form .grid_container {
+        grid-template-columns: 1fr;
+    }
+    .new_address_form .grid_container:first-child .input_group.full_width {
+        grid-column: initial;
+    }
+}

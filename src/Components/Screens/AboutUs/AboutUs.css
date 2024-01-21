@@ -1,0 +1,14 @@
+:root {
+  --swiper-pagination-color       : #fff;
+  --swiper-pagination-bullet-size : 10px;
+  --swiper-pagination-bullet-width: 10px
+}
+
+.about_hero_wrapper {
+  background-color: #f9f9f6;
+  margin-bottom: 8rem;
+}
+
+.about_hero_wrapper .container {
+  max-width: calc(116rem + (var(--containerPadding) * 2));
+}

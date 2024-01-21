@@ -1,0 +1,21 @@
+.centered_form_wrapper {
+    max-width: 52.25rem;
+    width: 100%;
+    margin: 10rem auto;
+    padding: 5rem 6.5rem 7rem;
+    border: 1px solid var(--gray-3);
+}
+.centered_form_wrapper h3{
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    color: #858585;
+}
+
+.centered_form_wrapper .body_text{
+    font-weight: 400;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--gray-4);
+    padding: 2rem 0;
+}

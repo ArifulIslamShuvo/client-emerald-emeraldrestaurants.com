@@ -1,0 +1,258 @@
+.orderPlaced {
+    padding-bottom: 12rem;
+}
+
+.order-info {
+    --bs-gutter-x  : 1.5rem;
+    --bs-gutter-y  : 0;
+    margin-top     : calc(var(--bs-gutter-y) * -1);
+    margin-right   : calc(var(--bs-gutter-x) * -.5);
+    margin-left    : calc(var(--bs-gutter-x) * -.5);
+    justify-content: start;
+}
+
+.order-detail {
+    width     : 100%;
+    text-align: start;
+
+}
+
+.order-placed {
+    font-family   : "Anko-PersonalUse-Medium";
+    font-size     : 43px;
+    line-height   : 6.8rem;
+    text-transform: uppercase;
+    color         : #355D6C;
+    font-weight   : 500;
+}
+
+.ordering {
+    font-family  : 'Roboto', sans-serif;
+    font-weight  : 500;
+    font-size    : 2.2rem;
+    line-height  : 3.2rem;
+    color        : #383838;
+    margin-bottom: 2.4rem;
+}
+
+.orderPlaced p {
+    font-family  : 'Roboto', sans-serif;
+    font-weight  : 300;
+    font-size    : 2.2rem;
+    line-height  : 3.2rem;
+    color        : #383838;
+    max-width    : 49rem;
+    margin-bottom: 5.5rem;
+}
+
+.orderPlaced p b {
+    font-weight: bold;
+}
+
+.view-order-btn {
+    width     : 173px;
+    text-align: center;
+}
+
+.orderPlaced a {
+    display      : block;
+    font-family  : 'Roboto', sans-serif;
+    font-weight  : normal;
+    font-size    : 16px;
+    line-height  : 2.1rem;
+    color        : #383838;
+    padding      : 18px 28px;
+    border       : 1px solid #383838;
+    border-radius: 60px;
+}
+
+.orderPlaced a:hover {
+    background: #91B110;
+    border    : 1px solid #91B110;
+    color     : white;
+}
+
+.rigthCart {
+    max-width: 46.1rem;
+    margin   : auto;
+}
+
+.cart-detailss {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    margin-top     : calc(var(--bs-gutter-y) * -1);
+    margin-right   : calc(var(--bs-gutter-x) * -.5);
+    margin-left    : calc(var(--bs-gutter-x) * -.5);
+    --bs-gutter-x  : 1.5rem;
+    --bs-gutter-y  : 0;
+    align-items    : center !important;
+    padding-bottom : 3rem !important;
+
+}
+
+.checkoutCart-title {
+    font-size     : 28px;
+    line-height   : 4.2rem;
+    text-transform: uppercase;
+    color         : #1A1A1A;
+    font-weight   : 400;
+}
+
+.trouvaille-logo img {
+    max-width: 16.5rem;
+}
+
+.checkout-cart-info {
+    flex : 0 0 auto;
+    width: 100%;
+}
+
+.cart-content {
+    flex      : 0 0 auto;
+    flex-basis: 33.33333333%;
+}
+
+.checkoutCartItem {
+    padding       : 0;
+    border-bottom : 1px solid #B3B3B3;
+    padding-bottom: 1.9rem;
+    margin-bottom : 5rem;
+}
+
+.checkoutCartItem li {
+    font-family    : 'Roboto', sans-serif;
+    margin-bottom  : 3.2rem;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.itmQuantity {
+    font-weight : bold;
+    font-size   : 18px;
+    line-height : 2.6rem;
+    color       : #383838;
+    margin-right: 1.2rem;
+
+}
+
+span {
+    display: inline-block;
+}
+
+.checkoutCartItem li div:nth-child(2) {
+    flex     : 0 0 68%;
+    max-width: 68%;
+}
+
+.product-name {
+    text-align: start;
+
+}
+
+.itemName {
+    font-weight: normal;
+    font-size  : 18px;
+    line-height: 2.3rem;
+    color      : #383838;
+
+}
+
+.itemPrice {
+    font-weight: 300;
+    font-size  : 18px;
+    line-height: 2.3rem;
+    color      : #383838;
+}
+
+.total {
+    flex : 0 0 auto;
+    width: 100%;
+}
+
+.allItemPriceBox li {
+    display        : flex;
+    justify-content: space-between;
+    font-family    : 'Roboto', sans-serif;
+    margin-bottom  : 2.4rem;
+}
+
+.firstColumn {
+    font-size  : 2rem;
+    line-height: 2.3rem;
+    color      : #383838;
+}
+
+.allItemPriceBox li:last-child .firstColumn,
+.allItemPriceBox li:last-child .secondColumn {
+    font-weight: bold;
+}
+
+.secondColumn {
+    font-size  : 2rem;
+    line-height: 2.3rem;
+    color      : #383838;
+}
+
+@media (max-width: 575.98px) {
+    .page-banner {
+        display: none;
+    }
+
+    .order-placed {
+        font-size: 32px;
+    }
+
+    .ordering {
+        font-size    : 18px;
+        line-height  : 2.4rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .orderPlaced p {
+        width        : 270px;
+        font-size    : 14px;
+        line-height  : 2.6rem;
+        margin-bottom: 2.5rem;
+
+    }
+
+    .orderPlaced a {
+        display      : block;
+        font-family  : 'Roboto', sans-serif;
+        font-weight  : 500;
+        font-size    : 16px;
+        line-height  : 2.1rem;
+        color        : #383838;
+        padding      : 14px 14px;
+        border       : 1px solid #383838;
+        border-radius: 60px;
+    }
+
+    .trouvaille-logo img {
+        max-width    : 10.5rem;
+        padding-right: 5px;
+    }
+
+    .cart-detailss {
+        padding-bottom: 1.8rem !important;
+    }
+
+    .itmQuantity {
+        font-size: 13px;
+    }
+
+    .itemName {
+        font-size: 16px;
+    }
+
+    .itemName {
+        font-size: 16px;
+    }
+
+    .allItemPriceBox li:last-child .firstColumn,
+    .allItemPriceBox li:last-child .secondColumn {
+        font-weight: bold;
+        font-size  : 16px;
+    }
+}

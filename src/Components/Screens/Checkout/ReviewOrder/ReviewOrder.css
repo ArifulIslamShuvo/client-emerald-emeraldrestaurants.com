@@ -1,0 +1,116 @@
+.review_order_page>.grid_container {
+    grid-template-columns: 8fr 4fr;
+    gap                  : 5rem;
+}
+
+.review_order_content {
+    border: 1px solid var(--gray-3);
+    border-radius: 1.2rem;
+    padding: 0 1.6rem;
+    max-height: 57.3rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.order_lists_title.grid_container {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+}
+.order_lists_title.grid_container .caption.bold {
+    color: var(--gray-5);
+}
+
+.order_lists .grid_container, .order_lists_title.grid_container {
+    grid-template-columns: .5fr 5fr 2fr 2fr 2fr .5fr;
+    column-gap           : 1rem;
+    align-items          : center;
+    padding              : 2rem 0;
+}
+.order_lists .grid_container:not(:last-child) {
+    border-bottom        : 1px solid var(--gray-3);
+}
+
+.order_item>*:last-child {
+    justify-self: flex-end;
+}
+
+.order_item img {
+    width: 100%;
+}
+
+.order_item button.delete>svg>g>path:nth-child(2) {
+    fill: #d34037;
+}
+
+.order_item button.delete:hover>svg>g>path:nth-child(2) {
+    fill: var(--black);
+}
+
+
+/* quantity modify*/
+.order_item .quantity {
+    width  : 10.275rem;
+    padding: 1rem 0;
+}
+
+.order_item .quantity button svg {
+    width : 1.33375rem;
+    height: 1.33375rem;
+}
+
+.order_item .quantity h5 {
+    font-weight   : 600;
+    font-size     : 1.6rem;
+    line-height   : 2.5rem;
+    letter-spacing: -0.01em;
+}
+
+
+/* delivery address view and order summery */
+.dav_os_wrapper .dav_wrapper {
+    width        : 100%;
+    /* max-width : 30.5rem; */
+    border       : 1px solid var(--gray-3);
+    border-radius: 1.2rem;
+    text-align   : center;
+    margin-bottom: 4rem;
+    padding      : 1.8rem 1.6rem;
+}
+
+.os_wrapper .grid_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 1.5rem;
+    padding: .5rem 0;
+}
+
+.os_wrapper>*:not(:last-child) {
+    /* margin-bottom: 1rem; */
+    border-bottom: 1px solid var(--gray-3);
+}
+
+.os_wrapper>*:last-child {
+    padding-top: 1.5rem;
+}
+
+.os_wrapper>*>*:last-child {
+    justify-self: flex-end;
+}
+
+.os_wrapper>div:not(.grand_total) h6:first-child {
+    color: var(--gray-6);
+}
+
+/* group button / link */
+/* .review_order_page .btn_group_wrapper {
+    width: 48%;
+    margin-left: auto;
+} */
+.review_order_page .btn_group_wrapper.grid_container {
+    margin-top: 4rem;
+}
+
+@media (orientation: portrait) {
+    .review_order_page>.grid_container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,228 @@
+.carousel-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.carousel-content > * {
+  flex-basis: 50%;
+  width: 50%;
+}
+
+.carousel-content .carousel-right .carousel-details {
+  width: 100%;
+  max-width: 57.3rem;
+}
+
+.carousel-content:nth-child(odd) .carousel-right {
+  padding-left: 10rem;
+}
+
+.carousel-content:nth-child(odd) .carousel-right .carousel-details {
+  margin: 0 auto;
+}
+
+.carousel-content:nth-child(even) .carousel-right {
+  padding-right: 10rem;
+}
+
+.order-left {
+  order: 1;
+}
+
+.order-right {
+  order: 2;
+}
+
+.indCompLogo {
+  padding-bottom: 4rem;
+}
+
+.indCompLogo img {
+  /* max-width: 25.3rem; */
+  width: 181px;
+  height: 156px;
+  /* width: 100%; */
+}
+
+.carousel-details .about-name,
+.carousel-details .about-cuisine  {
+  color: #383838;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.carousel-details .about-cuisine {
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize;
+  padding: 18px 0 31px 0;
+}
+/* ------ */
+
+
+.carousel-details p {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 3.8rem;
+  color: var(--gray-8);
+}
+
+.carousel-details span {
+  /* margin: 1.5rem 0; */
+}
+
+/* .carousel-details button {
+    font-family   : "Roboto", sans-serif;
+    font-weight   : 500;
+    font-size     : 1.8rem;
+    line-height   : 2.1rem;
+    color         : var(--white);
+    text-transform: capitalize;
+    padding       : 2rem 3.2rem;
+    background    : var(--greenyellow);
+    border-radius : 6rem;
+    margin-top    : 6.4rem;
+    transition    : all ease-in .2s;
+} */
+.carousel-details button {
+  width: 188px;
+  border: 1px solid #383838;
+  border-radius: 40px;
+  padding: 15px 35px;
+  color: #383838;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.carousel-details button:hover {
+  background: #383838;
+  color: var(--white);
+  fill: aliceblue;
+}
+.restaurants .carousel-details .restaurants-button-icon:hover svg {
+  background: #383838;
+}
+.restaurants .carousel-details .restaurants-button-icon:hover svg path {
+  fill: var(--white); /* Set the color you want on hover */
+}
+
+.swiper-slider img {
+  width: 100%;
+}
+
+.restaurants .carousel-details {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  justify-items: end;
+  align-items: center;
+  gap: 27px;
+}
+.restaurants .carousel-details .restaurants-left {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  gap: 27px;
+}
+
+.carousel-details .restaurants-button {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+.carousel-details .restaurants-button {
+  gap: 15px;
+}
+.restaurants .carousel-details .restaurants-button-icon svg {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #383838;
+  border-radius: 35px;
+  padding: 16px 15px;
+}
+
+#restaurants-hr {
+  width: 100%;
+  height: 1px;
+  background: rgba(133, 133, 133, 0.5);
+  border: none; /* Remove the default border */
+  margin: 35px;
+}
+
+@media screen and (max-width: 575.98px) {
+  .order-left {
+    order: initial;
+  }
+
+  .order-right {
+    order: initial;
+  }
+
+  .carousel-content > * {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .carousel-content:nth-child(even) .carousel-right {
+    padding-right: 0;
+  }
+
+  .carousel-content:nth-child(odd) .carousel-right {
+    padding-left: 0;
+  }
+
+  .carousel-left .swiper {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+ 
+
+  .carousel-details .about-name,
+.carousel-details .about-cuisine  {
+  color: #383838;
+  font-size: 12px;
+}
+  
+  .carousel-details .about-cuisine {
+    font-size: 10px;
+    font-style: italic;
+    text-transform: capitalize;
+    padding: 8px 0 11px 0;
+  }
+
+
+
+  .indCompLogo img {
+    width: 73px;
+    flex-shrink: 0;
+    /* width: 100%; */
+  }
+  .restaurants .carousel-details {
+    grid-template-columns: 2fr 10fr;
+    align-items: center;
+    gap: 17px;
+  }
+  .restaurants .carousel-details .restaurants-left {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+  .carousel-details button {
+    width: 100%;
+  }
+  .restaurants .carousel-details .restaurants-button-icon svg {
+    width: 35px;
+    height: 36px;
+    padding: 10px;
+  }
+
+  #restaurants-hr {
+    width: 100%;
+    height: 1px;
+    background: rgba(133, 133, 133, 0.5);
+    border: none; /* Remove the default border */
+    margin: 18px 0 16px 0;
+  }
+}

@@ -1,0 +1,17 @@
+/* .primaryBtn {
+    background-color: var(--blue-2);
+    color: var(--white);
+    border: 1px solid var(--blue-2);
+    border-radius: 35px;
+} */
+.primaryBtn {
+    background-color: #D9E021;
+    color: var(--black);
+    border: 1px solid #D9E021;
+    border-radius: 35px;
+}
+.primaryBtn:hover {
+    background-color: #91b110;
+    color: var(--white);
+    border: 1px solid #91b110;
+}

@@ -1,0 +1,70 @@
+.sl_form {
+    text-align: center;
+    padding   : 3.4rem 8rem 8.6rem;
+}
+
+.sl_form .image-wrapper {
+    margin-bottom: 9.8rem;
+}
+
+.sl_form h1 {
+    font-weight   : 400;
+    font-size     : 4rem;
+    line-height   : 5.2rem;
+    text-align    : center;
+    color         : #355d6c;
+    text-transform: uppercase;
+    margin-bottom : 4.2rem;
+}
+
+.location-conainer {
+    display              : grid;
+    grid-template-columns: 320px 1fr;
+    gap                  : 50px;
+}
+
+.location-conainer button {
+    font-size       : 2.2rem;
+    padding         : .6rem .4rem;
+    border-radius   : 0.4rem;
+    background-color: transparent;
+    border          : 1px solid #383838;
+    text-transform  : uppercase;
+    color           : #383838;
+}
+
+.location-conainer button:hover {
+    background-color: #91B110;
+    border-color    : #91B110;
+    color           : white;
+}
+
+.select-box select {
+    font-family     : 'Roboto', sans-serif;
+    background-color: transparent;
+    border          : 0;
+    border-bottom   : 1px solid #B3B3B3;
+    width           : 40.6rem;
+    font-size       : 2.2rem;
+    line-height     : 2.6rem;
+    padding         : 4px 0;
+    margin-left     : 3rem;
+    width           : 100%;
+}
+
+@media screen and (max-width: 767.98px) {
+    .sl_form {
+        text-align: center;
+        padding   : 1.4rem 0 1.6rem;
+    }
+
+    .location-conainer {
+        display              : grid;
+        grid-template-columns: 200px 1fr;
+        gap                  : 30px;
+    }
+
+    .select-box select {
+        margin-left: 0;
+    }
+}

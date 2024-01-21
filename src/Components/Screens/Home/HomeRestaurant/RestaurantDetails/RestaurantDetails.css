@@ -1,0 +1,153 @@
+.restaurent-Details {
+  /* padding: 5.8rem 0 5.7rem; */
+}
+
+.social_logo {
+  text-align: center !important;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.social-link a {
+  margin-right: 2.4rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.trouvaille_logo {
+  text-align: center;
+  flex: 0 0 auto;
+  /* width: 100%; */
+  width: 191px;
+  margin: 0 auto;
+}
+.trouvaille_logo img {
+  border-radius: 100%;
+  width: 100%;
+  /* height: 191px; */
+  flex-shrink: 0;
+}
+
+/* .restaLogo {
+  max-width: 37.7rem;
+  min-width: 25rem;
+  margin-top: 3.4rem;
+  margin-bottom: 3.4rem;
+} */
+
+.restaurSubTitle {
+  text-align: center !important;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* .restaurSubTitle p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  font-style: italic;
+  color: #91b110;
+  margin-bottom: 2rem;
+} */
+.restaurSubTitle p {
+  color: #d9e021;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 5rem;
+}
+
+.restaurDetails {
+  text-align: center;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* .restaurDetails p {
+  max-width: 81.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 3.8rem;
+  color: #383838;
+  margin: auto;
+  padding-top: 0.6rem;
+  padding-bottom: 2.4rem;
+} */
+.restaurDetails p {
+  color: #fff;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; 
+  margin-top: 3.2rem;/* 136.364% */
+}
+
+.restaurDetails a {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #53a0bc;
+  padding: 2rem 3.2rem;
+  border: 1px solid #53a0bc;
+  border-radius: 6rem;
+  display: inline-block;
+ 
+}
+
+@media (max-width: 575.98px) {
+  .restaurDetails p {
+    font-size: 15px;
+    line-height: 32px;
+  }
+
+  .restaurDetails p {
+    width: 365px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #383838;
+    margin: auto;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    line-height: 32px;
+  }
+
+  .restaurSubTitle p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .restaurDetails a {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px 32px;
+  }
+
+  /* .trouvaille_logo {
+    text-align: center;
+    flex      : 0 0 auto;
+    width     : 100%;
+    height    : 77px;
+  } */
+
+  .restaLogo {
+    max-width: 9rem;
+    min-width: 8rem;
+  }
+
+  .row {
+    gap: 0.3rem;
+  }
+
+  .social-link a {
+    margin-right: 1.5rem;
+  }
+}

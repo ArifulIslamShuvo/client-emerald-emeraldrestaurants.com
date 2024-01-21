@@ -1,0 +1,32 @@
+.about-hero-logo {
+  position        : sticky;
+  top             : 9%;
+  z-index         : 2;
+  background-color: white;
+  padding         : 1.2rem 0;
+}
+
+.about-hero-logo .about_logos {
+  max-width: 11rem;
+  margin   : auto;
+}
+
+.about-hero-logo a {
+  width    : 100%;
+  max-width: 12rem;
+  margin   : 0 auto;
+}
+
+.about-hero-logo img {
+  width: 100%;
+}
+
+@media screen and (max-width: 575.98px) {
+  .about-hero-logo a {
+    text-decoration: none;
+  }
+
+  .about-hero-logo a img {
+    width: 100%;
+  }
+}

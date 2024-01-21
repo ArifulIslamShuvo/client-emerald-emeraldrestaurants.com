@@ -1,0 +1,390 @@
+.checkout {
+  padding: 8.2rem 0 2rem;
+}
+
+.banner-img {
+  height: 113px;
+  width : 100%;
+}
+
+.checkout-contents {
+  display  : flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.details {
+  flex        : 0 0 auto;
+  width       : 58.33333333%;
+  border-right: 1px solid #b3b3b3;
+}
+
+.details .place-btn {
+  display: none;
+}
+
+.address-info {
+  display        : flex;
+  flex-wrap      : wrap;
+  align-items    : center;
+  justify-content: space-between;
+  margin-bottom  : 20px;
+}
+
+.info-box {
+  padding      : 5.6rem;
+  background   : #ffffff;
+  border       : 1px solid #f2f2f2;
+  box-shadow   : 4px 12px 60px rgb(0 0 0 / 3%);
+  margin-bottom: 7.2rem;
+}
+
+.info-box span {
+  color      : #de973d;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style : italic;
+  font-size  : 1.8rem;
+  text-align : start;
+}
+
+.info-box h1 {
+  font-family   : "Anko-PersonalUse-Medium";
+  font-size     : 4rem;
+  line-height   : 5.2rem;
+  text-transform: uppercase;
+  color         : #355d6c;
+  font-weight   : 500;
+  padding-top   : 10px;
+}
+
+.info-box .editBtn {
+  background-color: transparent;
+  border          : none;
+}
+
+.info-box .editBtn img {
+  height: 4rem;
+  width : 4rem;
+}
+
+.deliveryInfoInput,
+.acountInfoInput {
+  width: 460px;
+}
+
+.checkout-contents .acountInfo h5,
+.checkout-contents .deliveryInfo h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size  : 2rem;
+  line-height: 2.3rem;
+  color      : #383838;
+  padding-top: 2.4rem;
+}
+
+.checkout-contents .acountInfo p,
+.checkout-contents .deliveryInfo p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size  : 2.2rem;
+  line-height: 2.6rem;
+  color      : #383838;
+  padding-top: 0.8rem;
+}
+
+.paymentOption h1 {
+  font-family   : "Anko-PersonalUse-Medium";
+  font-size     : 36px;
+  line-height   : 5.2rem;
+  font-weight   : 500;
+  text-transform: uppercase;
+  color         : #355d6c;
+  text-align    : start;
+}
+
+.paymentOption p {
+  font-family  : "Roboto", sans-serif;
+  font-weight  : 300;
+  font-size    : 20px;
+  line-height  : 3.2rem;
+  color        : #383838;
+  max-width    : 46.7rem;
+  margin-bottom: 13.7rem;
+  text-align   : start;
+}
+
+.options {
+  padding: 0 7px;
+}
+
+.paymentOption p b {
+  font-weight: bold;
+}
+
+
+
+/* right side cart information */
+.cart-infomation {
+  flex   : 0 0 auto;
+  width  : 40%;
+  margin : 0 auto;
+  padding: 0px 30px;
+}
+
+.rigthCart {
+  max-width: 46.1rem;
+  margin   : auto;
+}
+
+.title-logo {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-between;
+  align-items    : center;
+  padding-bottom : 3rem;
+}
+
+.checkoutCart-title {
+  font-size     : 3.2rem;
+  line-height   : 4.2rem;
+  text-transform: uppercase;
+  color         : #1a1a1a;
+}
+
+.deliveryInfo {
+  text-align: start;
+}
+
+.account-title {
+  font-family   : "Anko-PersonalUse-Medium";
+  font-size     : 4rem;
+  line-height   : 5.2rem;
+  text-transform: uppercase;
+  color         : #355d6c;
+  font-weight   : 500;
+  padding-top   : 10px;
+}
+
+.specialLimit {
+  color      : #DE973D;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style : italic;
+  font-size  : 1.8rem;
+}
+
+.text-end {
+  text-align: right !important;
+}
+
+.place-btn {
+  width  : 100%;
+  padding: 0 20px;
+  margin : auto;
+}
+
+
+.checkoutCartItem li div:nth-child(2) {
+  text-align: start;
+}
+
+.checkoutNote {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size  : 1.6rem;
+  line-height: 2.6rem;
+  text-align : center;
+  color      : #383838;
+  max-width  : 36.1rem;
+  margin     : auto;
+}
+
+.firstColumn {
+  font-weight: 300;
+  font-size  : 2rem;
+  line-height: 2.3rem;
+  color      : #383838;
+}
+
+.secondColumn {
+  font-weight: normal;
+  font-size  : 2rem;
+  line-height: 2.3rem;
+  color      : #383838;
+}
+
+.specInstruction {
+  border: 1px solid #dddddd;
+}
+
+
+@media (max-width: 575.98px) {
+  .checkout-contents {
+    flex-direction: column-reverse;
+  }
+
+  .cart-infomation {
+    width       : 100%;
+    padding-left: 15px;
+    padding     : 0px 10px;
+  }
+
+  .checkout-content {
+    display: inline;
+  }
+
+  .checkoutCart-title {
+    font-size     : 2.2rem;
+    line-height   : 4.2rem;
+    text-transform: uppercase;
+    color         : #1a1a1a;
+  }
+
+  .title-logo {
+    justify-content: space-between;
+    align-items    : center;
+  }
+
+  .checkoutCartItem {
+    padding-right: 10px;
+  }
+
+  .checkoutCartItem li {
+    margin-bottom: 2.2rem;
+  }
+
+  .firstColumn {
+    font-size: 16px;
+  }
+
+  .allItemPriceBox {
+    padding-right: 10px;
+  }
+
+  .allItemPriceBox li {
+    margin-bottom: 16px;
+  }
+
+  .secondColumn {
+    font-weight: normal;
+    font-size  : 1.6rem;
+    line-height: 2.3rem;
+    color      : #383838;
+  }
+
+  .specInstruction {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size  : 1.6rem;
+    line-height: 2.1rem;
+    color      : #858585;
+    padding    : 2rem;
+    border     : 1px solid #dddddd;
+  }
+
+  .cart-infomation .place-btn {
+    display: none !important;
+  }
+
+  .details {
+    flex        : 0 0 auto;
+    width       : 100%;
+    border-right: none;
+  }
+
+  .details .place-btn {
+    display: block;
+  }
+
+  .info-box {
+    max-width: initial;
+    padding  : 36px 18px;
+  }
+
+  .info-box h1 {
+    font-family   : "Anko-PersonalUse-Medium";
+    font-size     : 2.4rem;
+    line-height   : 5.2rem;
+    text-transform: uppercase;
+    color         : #355d6c;
+    font-weight   : 500;
+    padding-top   : 10px;
+  }
+
+  .info-box span {
+    font-size: 14px;
+  }
+
+  .info-box .editBtn img {
+    height: 3rem;
+    width : 3rem;
+  }
+
+  .address-info {
+    align-items    : center;
+    justify-content: space-between;
+  }
+
+  .account-title {
+    font-size    : 2.5rem !important;
+    width        : 50px;
+    line-height  : 3rem !important;
+    margin-bottom: 20px;
+  }
+
+  .paymentOption h1 {
+    font-family   : "Anko-PersonalUse-Medium";
+    font-size     : 26px;
+    line-height   : 5.2rem;
+    font-weight   : 500;
+    text-transform: uppercase;
+    color         : #355d6c;
+    text-align    : start;
+  }
+
+  .paymentOption p {
+    width        : 280px;
+    font-family  : "Roboto", sans-serif;
+    font-weight  : 300;
+    font-size    : 15px;
+    line-height  : 2.2rem;
+    color        : #383838;
+    margin-bottom: 10px !important;
+    text-align   : start;
+  }
+
+  .place-button {
+    width  : 380px;
+    display: block;
+
+  }
+
+  .brand-button {
+    padding  : 16px;
+    font-size: 16px;
+  }
+
+  .checkoutNote {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size  : 1.4rem;
+    line-height: 2rem;
+    text-align : center;
+    color      : #383838;
+    max-width  : 24.1rem;
+    margin     : auto;
+  }
+
+  .deliveryInfoInput {
+    width: 300px;
+  }
+
+  .acountInfoInput {
+    width: 300px;
+  }
+
+  .place-order-btn {
+    padding: 0 10px;
+  }
+}

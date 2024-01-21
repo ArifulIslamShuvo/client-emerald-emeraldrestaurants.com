@@ -1,0 +1,182 @@
+.order {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.order-details {
+    flex : 0 0 auto;
+    width: 58%;
+}
+
+.allOrder {
+    /* max-width: 104.2rem; */
+    margin   : auto;
+    padding: 5rem 4rem;
+}
+
+.orderTitle {
+    font-weight   : 400;
+    font-size     : 5.6rem;
+    line-height   : 7.3rem;
+    text-transform: uppercase;
+    color         : #1A1A1A;
+    text-align    : start;
+    margin-bottom : 4rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.align-middle {
+    vertical-align: middle !important;
+}
+
+.table {
+    width          : 100%;
+    min-width      : 700px;
+    margin-bottom  : 1rem;
+    color          : #212529;
+    border-color   : #dee2e6;
+    caption-side   : bottom;
+    border-collapse: collapse;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: currentColor;
+}
+
+thead {
+    display       : table-header-group;
+    border-color  : inherit;
+    border-style  : solid;
+    border-width  : 0;
+    vertical-align: bottom;
+}
+
+tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.allOrderTable thead th {
+    font-family   : 'Roboto', sans-serif;
+    font-weight   : 500;
+    font-size     : 12px;
+    line-height   : 1.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color         : #6B6B6B;
+    text-align    : left;
+    border-bottom : none;
+    padding       : 1.5rem .5rem;
+    min-width     : 13rem;
+}
+
+.table>tbody {
+    vertical-align: inherit;
+}
+
+tbody {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.allOrderTable tbody td {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size  : 18px;
+    line-height: 3.4rem;
+    color      : #272727;
+    text-align : left;
+    padding    : 1.5rem .5rem;
+}
+
+.allOrderTable tbody td:last-child>button {
+    font-size: 2.4rem;
+    color: #6B6B6B;
+}
+
+.allOrderTable thead th:last-child, .allOrderTable tbody td:last-child {
+    text-align   : center;
+    padding-right: 24px;
+}
+
+.deliveryStatus {
+    display       : inline-block;
+    font-family   : 'Roboto', sans-serif;
+    font-weight   : 500;
+    font-size     : 14px;
+    line-height   : 2.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding       : 0.8rem 2.5rem;
+    min-width     : 14.3rem;
+}
+
+.pendingStatus {
+    color     : #DF911B;
+    background: rgba(223, 145, 27, 0.1);
+}
+
+.deliverStatus {
+    color     : #1FC069;
+    background: rgba(31, 192, 105, 0.1);
+}
+.cancelStatus {
+    color     : #e9590c;
+    background: rgba(192, 133, 31, 0.1);
+}
+
+.deliveredStatus {
+    color     : #c5d724;
+    background: rgba(185, 212, 31, 0.1);
+}
+.shippedStatus {
+    color     : #e4a227;
+    background: rgba(176, 200, 37, 0.1);
+}
+
+.order-img {
+    flex : 0 0 auto;
+    width: 42%;
+}
+
+.left-img {
+    height    : 100%;
+    object-fit: cover;
+    width     : 100% !important;
+}
+
+@media (max-width: 575.98px) {
+    .order {
+        flex-direction: column;
+    }
+
+    .allOrder {
+        padding: 6rem 2.4rem 5rem 2.4rem;
+    }
+
+    .allOrderTable tbody td {
+        padding    : 1.5rem 0;
+        font-size  : 16px;
+        line-height: 3.4rem;
+    }
+
+    .order-details {
+        width: 100%;
+    }
+
+    .order-img {
+        width: 100%;
+    }
+
+    .orderTitle {
+        font-size    : 2.6rem;
+        line-height: 3.6rem;
+        margin-bottom: 1.2rem;
+    }
+
+}

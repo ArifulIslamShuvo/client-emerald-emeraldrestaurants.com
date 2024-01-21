@@ -1,0 +1,87 @@
+.addNumber {
+  max-width: 375px;
+  padding: 150px 0;
+  margin: auto;
+}
+.addNumber p {
+  color: #070707;
+  text-align: center;
+  font-family: Anko Personal Use;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  padding-bottom: 2.5rem;
+}
+
+.addNumber h3 {
+  color: var(--black, #070707);
+  font-family: Anko Personal Use;
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 156.25% */
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+.number {
+  padding-bottom: 40px;
+}
+
+.addNumber input {
+  width: 100%;
+  padding: 12px 60px 12px 60px;
+  border: 1px solid #b7b7b7;
+  background: #fff;
+  color: #1f1e1e;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+.addNumber input::placeholder {
+  color: #7d7d7d;
+  font-family: Roboto;
+  font-size: 14.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+.number_input {
+  position: relative;
+}
+.addNumber span {
+  position: absolute;
+  top: 25%;
+  left: 4%;
+  color: #070707;
+  font-family: Roboto;
+  font-size: 14.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px; /* 177.778% */
+}
+@media (max-width: 575.98px) {
+  .addNumber {
+    padding: 70px 10px;
+  }
+  .addNumber p {
+    color: #070707;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.15px;
+  }
+  .addNumber h3 {
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 156.25% */
+    text-transform: uppercase;
+  }
+  
+}

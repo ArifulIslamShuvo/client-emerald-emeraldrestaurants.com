@@ -1,0 +1,131 @@
+.deals-section {
+  background-color: #f9f9f6;
+  position: relative;
+}
+
+.dealsCard {
+  background-color: #f9f9f6;
+}
+
+.overlayDealsBox {
+  position: relative;
+}
+
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.overlayDealsBtn {
+  position: absolute;
+  top: 1.8rem;
+  right: 1.9rem;
+  background: #53a0bc;
+  border-radius: 30px;
+  padding: 1rem 2.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: white;
+  cursor: pointer;
+}
+.overlayDealsContent h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #5c5a5a;
+  margin-bottom: 2.2rem;
+}
+.overlayDealsContent {
+  position: absolute;
+  top: 3.8rem;
+  right: 0;
+  width: 28.8rem;
+  display: none;
+}
+
+.overlayDealsBtn:hover .overlayDealsContent {
+  display: block;
+}
+
+.cardContent {
+  background: #f9f9f6;
+  box-shadow: 4px 4px 25px rgb(0 0 0 / 10%);
+  width: 100%;
+  margin-top: 0.8rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.cardContent h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #858585;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.cardContent h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 2.2rem;
+}
+
+.cardContent h2 {
+  font-family: "Anko-PersonalUse-Bold";
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #1a1a1a;
+  margin-top: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+/* .dealsCard button {
+    font-weight  : normal;
+    font-size    : 1.8rem;
+    line-height  : 2.1rem;
+    font-family  : 'Roboto', sans-serif;
+    padding      : 2rem 3.2rem;
+    border-radius: 60px;
+} */
+
+.in_de_btn {
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #383838;
+  font-family: "Roboto", sans-serif;
+  padding: 2rem 3.2rem;
+  border: 1px solid #383838;
+  border-radius: 60px;
+  background-color: transparent;
+  text-align: center;
+  max-width: 16rem;
+  margin: auto;
+}
+/* .cardContent button {
+  background: #91b110 ;
+  border: 1px solid #91b110 ;
+  color: white !important;
+} */
+
+@media (max-width: 768px) {
+  .title {
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 4.7rem;
+    color: #000000;
+  }
+}

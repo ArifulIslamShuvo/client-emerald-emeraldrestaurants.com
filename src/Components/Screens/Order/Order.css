@@ -1,0 +1,113 @@
+.pending_order {
+  border-radius: 40px 40px 0px 0px;
+  background   : #53a0bc;
+  position     : fixed;
+  bottom       : 0;
+  z-index      : 2;
+  width        : 100%;
+}
+.pending_order {
+ display: none;
+}
+
+.pending_order_content {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  flex-wrap      : wrap;
+  height         : 7.6rem;
+}
+
+.po_left_middle {
+  flex-basis     : 66%;
+  display        : flex;
+  justify-content: space-between;
+}
+
+.po_left p {
+  color         : #fff;
+  font-family   : Poppins;
+  font-size     : 2.2rem;
+  font-weight   : 400;
+  line-height   : 3.2rem;
+  letter-spacing: -0.48px;
+}
+
+.po_middle {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+  align-items    : center;
+  gap            : 1rem;
+}
+
+.po_middle>div {
+  width        : 70px;
+  height       : 8px;
+  border-radius: 5px;
+  opacity      : 0.4000000059604645;
+  background   : #fff;
+}
+
+.po_middle>div.active {
+  opacity   : 1;
+  background: #d9e021;
+}
+
+.po_right {
+  padding      : 7px 24px;
+  border-radius: 53px;
+  border       : 2px solid #fff;
+}
+
+.po_right .po_btn {
+  color         : #fff;
+  font-family   : Poppins;
+  font-size     : 18px;
+  font-style    : normal;
+  font-weight   : 400;
+  line-height   : 32px;
+  letter-spacing: -0.4px;
+}
+
+@media (max-width: 575.98px) {
+  .pending_order {
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .po_left_middle {
+    flex-direction: column;
+    align-items   : flex-start;
+    gap           : 1rem;
+  }
+
+  .po_left p {
+    font-size     : 1.7rem;
+    font-style    : normal;
+    font-weight   : 400;
+    line-height   : normal;
+    letter-spacing: -0.26px;
+  }
+
+  .po_middle>div {
+    width        : 47.194px;
+    height       : 5.394px;
+    border-radius: 3.371px;
+    opacity      : 0.4000000059604645;
+    background   : #fff;
+  }
+
+  .po_right {
+    padding      : 7px 13px;
+    border-radius: 29.722px;
+    border       : 1.122px solid #fff;
+  }
+
+  .po_right .po_btn {
+    font-size     : 13px;
+    font-style    : normal;
+    font-weight   : 400;
+    line-height   : 17.945px;
+    letter-spacing: -0.26px;
+  }
+}

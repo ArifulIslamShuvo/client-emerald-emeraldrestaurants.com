@@ -1,0 +1,75 @@
+.contact {
+  margin         : -3.6rem -5.2rem;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+}
+
+.contact-us-container {
+  padding: 3.6rem 5.2rem;
+  flex   : 0 0 auto;
+  width  : 33.33333333%;
+}
+
+.restaurant-logo {
+  max-width: 12.8rem;
+  width    : 100%;
+}
+
+.logo-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size  : 2.4rem;
+  line-height: 2.2rem;
+  margin     : 1rem 0 1.8rem;
+}
+
+.contact-info-wrapper .list_item_wrapper {
+  padding-left: 2rem;
+}
+
+.contact-info-wrapper .list_item_wrapper .list_item:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+
+.contact-info-wrapper .list_item {
+  display: flex;
+}
+
+.contact-info-wrapper .list_item .icon {
+  flex        : 0 0 18px;
+  max-width   : 18px;
+  margin-right: 1.8rem;
+}
+
+
+.contact-info-wrapper .inner-content p {
+  font-size  : 1.8rem;
+  line-height: 2.2rem;
+  color      : inherit;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height   : auto;
+}
+
+
+@media (max-width: 575.98px) {
+  .contact {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .contact-us-container {
+    width: 100%;
+  }
+
+  .contact-us-container {
+    padding: 3.6rem 2.4rem;
+}
+
+  .contact-info-wrapper .inner-content p {
+    font-size: 14px;
+  }
+}

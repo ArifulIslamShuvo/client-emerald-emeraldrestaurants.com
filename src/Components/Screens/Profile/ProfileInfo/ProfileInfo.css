@@ -1,0 +1,98 @@
+.personal_info_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile .profile_info h2 {
+    font-weight   : 500;
+    font-size     : 3.2rem;
+    line-height   : 4.2rem;
+    text-transform: uppercase;
+    color         : #355D6C;
+    padding-bottom: 2.4rem;
+}
+
+.profile-image-box {
+    position: relative;
+}
+.profile-image-box input[type="file"] {
+    position  : absolute;
+    opacity   : 0;
+    visibility: hidden;
+}
+
+.profile-image-box .file-upload-label {
+    width        : 3.2rem;
+    height       : 3.2rem;
+    line-height  : 3.2rem;
+    border-radius: 50%;
+    background   : #53A0BC;
+    text-align   : center;
+    cursor       : pointer;
+    position     : absolute;
+    top          : 55%;
+    left         : 9.5%;
+}
+
+.profile-image-box .file-upload-label svg path {
+    fill: #ffffff;
+}
+
+.profile-img {
+    height       : 10rem;
+    width        : 10rem;
+    object-fit   : cover;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.profile .profile_info .editBtn {
+    background-color: transparent;
+    border          : none;
+}
+
+.profile .profile_info .editBtn img {
+    height: 24px;
+    width : 24px;
+}
+
+.profile .profile_info h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size  : 2rem;
+    line-height: 2.3rem;
+    color      : #383838;
+    
+}
+
+.profile .profile_info p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size  : 2.2rem;
+    line-height: 2.6rem;
+    color      : #383838;
+    padding-top: .8rem;
+    padding-bottom: 2.4rem;
+}
+
+.profile .profile_info .delAddress {
+    padding-top: 8.8rem;
+}
+
+.profile-input {
+    max-width: 51.3rem;
+    width    : 100%;
+}
+
+.profile-input button {
+    font-family     : 'Roboto', sans-serif;
+    padding         : 2rem 4.9rem;
+    background-color: #53A0BC;
+    border          : none;
+    font-size       : 1.8rem;
+    line-height     : 2.1rem;
+    color           : #FFFFFF;
+    font-weight     : 500;
+    margin-top      : 4.1rem;
+}

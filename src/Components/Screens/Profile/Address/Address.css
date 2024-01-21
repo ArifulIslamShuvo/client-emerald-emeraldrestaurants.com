@@ -1,0 +1,98 @@
+.my_address_row.grid_container {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap                  : 2rem;
+}
+
+.my_address_row .default_info,
+.my_address_row .address_add {
+    border: 1px solid var(--gray-3);
+}
+
+.my_address_row>.grid_item:first-child .default_info,
+.my_address_row>.grid_item:not(:first-child) .default_info:hover,
+.my_address_row .address_add:hover {
+    border: 1px solid #53A0BC;
+}
+
+
+.my_address_row .da_text {
+    width         : 100%;
+    font-weight   : 500;
+    font-size     : 1.8rem;
+    line-height   : 2.1rem;
+    text-align    : center;
+    text-transform: uppercase;
+    padding-top   : 1.4rem;
+    transition    : color .3s ease-in-out;
+}
+
+.my_address_row>.grid_item:not(:first-child) .da_text {
+    color: var(--gray-3);
+}
+
+.my_address_row>.grid_item:not(:first-child) .da_text:hover {
+    color: #53A0BC;
+}
+
+.my_address_row .address_add {
+    width          : 100%;
+    min-height     : 33.5rem;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.my_address_row .address_add svg {
+    width : 4.2rem;
+    height: 4.2rem;
+    fill  : var(--gray-4);
+}
+
+.my_address_row .address_add:hover svg {
+    fill: var(--megenda);
+}
+
+.my_address_row .address_add .btn_text {
+    font-weight   : 500;
+    font-size     : 1.8rem;
+    line-height   : 2.3rem;
+    text-transform: uppercase;
+    color         : var(--gray-4);
+    margin-top    : 2.4rem;
+}
+
+.my_address_row .address_add:hover .btn_text {
+    color: var(--megenda);
+}
+
+
+
+.my_address_row .address_add a {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+.address_add a .btn_text {
+    padding-top: 1.625rem;
+    color      : var(--black);
+}
+
+.grid_container .forgot_pass {
+    margin-top: 0;
+}
+.my_address_row .edit_btn {
+    top: 0.5rem;
+    left: 2.5rem;
+}
+@media (orientation: portrait) {
+    .my_address_row.grid_container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_container .forgot_pass {
+        margin-top: 3rem;
+    }
+}

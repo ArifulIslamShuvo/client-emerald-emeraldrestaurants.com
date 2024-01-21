@@ -1,0 +1,16 @@
+.privacy_policy .container>*:not(:last-child){
+    margin-bottom: 5rem;
+}
+.privacy_policy .container>*:nth-child(1)>p.body_text {
+    border: 1px dashed var(--gray-3);
+    text-align: center;
+    border-radius: .8rem;
+    padding: 1.6rem;
+}
+.privacy_policy h4 {
+    color: var(--deep-green);
+    text-align: center;
+}
+.privacy_policy h4, .privacy_policy h5 {
+    margin-bottom: 1.8rem;
+}

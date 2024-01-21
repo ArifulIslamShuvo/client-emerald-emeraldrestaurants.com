@@ -1,0 +1,96 @@
+.modal {
+    z-index: 1060;
+}
+
+.modal,
+.modal_backdrop {
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    width   : 100%;
+    height  : 100%;
+}
+
+.modal_backdrop {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.modal_dialog {
+    position      : relative;
+    max-width     : 73.4rem;
+    margin        : 1.75rem auto;
+    pointer-events: none;
+}
+
+.modal.large .modal_dialog {
+    max-width     : 128rem;
+}
+
+.modal_dialog_scrollable {
+    height: calc(100% - 3.5rem);
+}
+
+.modal_dialog_centered {
+    display    : flex;
+    align-items: center;
+    min-height : calc(100% - 3.5rem);
+}
+
+.modal_content {
+    position        : relative;
+    width           : 100%;
+    display         : flex;
+    flex-direction  : column;
+    background-color: var(--white);
+    border-radius   : .5rem;
+    pointer-events  : auto;
+    padding         : 3rem;
+    z-index         : 2;
+}
+
+.modal.large .modal_content {
+    padding: 5rem 4.2rem;
+}
+
+.modal_dialog_scrollable .modal_content {
+    max-height: 100%;
+    overflow  : hidden;
+}
+
+.modal_dialog_scrollable .modal_body::-webkit-scrollbar {
+    display: none;
+}
+
+.modal_dialog_scrollable .modal_body {
+    overflow-y        : auto;
+    -ms-overflow-style: none;
+    scrollbar-width   : none;
+}
+
+.modal_close {
+    position : absolute;
+    top      : 1rem;
+    right    : 1.5rem;
+    font-size: 2.4rem;
+    color    : var(--gray-9);
+}
+
+.modal_heading {
+    font-weight   : 400;
+    font-size     : 4.2rem;
+    line-height   : 5.8rem;
+    text-align    : center;
+    text-transform: capitalize;
+    color         : var(--black);
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 767.98px) {
+    .modal_dialog {
+        margin: 1.75rem 1rem;
+    }
+
+    .modal.large .modal_content {
+        padding: 3rem 1.6rem;
+    }
+}

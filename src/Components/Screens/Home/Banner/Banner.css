@@ -1,0 +1,61 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner_item_content {
+  position: absolute;
+  text-align: right;
+  right: 5%;
+  left: 5%;
+  bottom: 10.4rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+}
+
+
+.banner_title {
+  max-width: 58rem;
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 6.4rem;
+  line-height: 8rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 3.8rem;
+}
+
+.order-btn {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #ffffff;
+  padding: 2.4rem 6.2rem;
+  border: 0.2rem solid #ffffff;
+  border-radius: 6rem;
+}
+
+.order-btn:hover {
+  background-color: #53a0bc;
+  border: 0.2rem solid #53a0bc;
+}
+.sm_img {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .banner .swiper-slide img {
+    height: 100vh;
+  }
+  .lg_img {
+    display: none;
+  }
+
+  .sm_img {
+    display: block;
+  }
+}

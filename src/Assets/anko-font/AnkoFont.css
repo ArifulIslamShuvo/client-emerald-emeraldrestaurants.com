@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "AnkoPersonalUse";
+    src        : url('./AnkoPersonalUse.otf');
+}
+
+@font-face {
+    font-family: "Anko-PersonalUse-Bold";
+    src        : url('./Anko-PersonalUse-Bold.otf');
+}
+
+@font-face {
+    font-family: "Anko-PersonalUse-BoldItalic";
+    src        : url('./Anko-PersonalUse-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: "Anko-PersonalUse-Medium";
+    src        : url('./Anko-PersonalUse-Medium.otf');
+}
+
+@font-face {
+    font-family: "Anko-PersonalUse-MediumItalic";
+    src        : url('./Anko-PersonalUse-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: "AnkoPersonalUse-RegularItalic";
+    src        : url('./AnkoPersonalUse-RegularItalic.otf');
+}
+
+@font-face {
+    font-family: "Anko-PersonalUse-SemiBoldItalic";
+    src        : url('./Anko-PersonalUse-SemiBoldItalic.otf');
+}

@@ -1,0 +1,11 @@
+.invertedBtn {
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 35px;
+  border: 1px solid #383838;
+}
+.invertedBtn:hover {
+  background-color: #d9e021;
+  border: 1px solid #ade021;
+  color: var(--white);
+}

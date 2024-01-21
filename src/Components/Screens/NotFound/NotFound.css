@@ -1,0 +1,46 @@
+.not-found-section {
+    min-height: calc(100vh - 35.8rem);
+}
+
+.not-found-content {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+}
+
+.not-found-inner {
+    padding   : 9.2rem 11.2rem;
+    display   : inline-block;
+    text-align: center;
+}
+
+.not-found-inner img {
+    max-width: 100%;
+}
+
+.not-found-inner h4 {
+    font-weight   : 500;
+    font-size     : 3.2rem;
+    line-height   : 4.2rem;
+    text-align    : center;
+    text-transform: uppercase;
+    color         : #53A0BC;
+    margin-top    : 3.8rem;
+}
+
+@media (max-width: 575.98px) {
+    .not-found-inner {
+        width  : 380px;
+        padding: 3.2rem 4.2rem;
+    }
+
+    .not-found-inner img {
+        width: 100%;
+    }
+
+    .not-found-inner h4 {
+        width    : 227px;
+        font-size: 20px;
+        margin   : 0 auto;
+    }
+}

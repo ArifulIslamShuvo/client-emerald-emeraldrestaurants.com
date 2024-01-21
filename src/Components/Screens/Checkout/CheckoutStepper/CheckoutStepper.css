@@ -1,0 +1,69 @@
+.steper_wrapper {
+  width: 37.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  position: relative;
+  margin: 0 auto 7.2rem;
+}
+
+.steper_wrapper > * {
+  position: relative;
+  text-align: center;
+}
+
+.steper_wrapper > *:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray-4);
+}
+
+.steper_wrapper .is_completed::before {
+  background-color: var(--black);
+}
+
+.steper_wrapper span {
+  display: inline-block;
+  width: 4.125rem;
+  height: 4.125rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3.125rem;
+  text-align: center;
+  color: var(--black);
+  border-radius: 50%;
+  background: #d9d9d9;
+  z-index: 1;
+  padding: 3px 0 4px;
+  position: relative;
+}
+
+.steper_wrapper .is_active span {
+  color: var(--white);
+  background-color: var(--blue-2);
+  border: 1px solid var(--blue-2);
+}
+
+.steper_wrapper h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.44rem;
+  line-height: 2.6rem;
+  color: var(--gray-4);
+  padding-top: 1.625rem;
+}
+
+.steper_wrapper .is_active h6 {
+  color: var(--blue-2);
+}
+
+@media (orientation: portrait) {
+  .steper_wrapper {
+    margin: 0 auto 5.2rem;
+  }
+}
